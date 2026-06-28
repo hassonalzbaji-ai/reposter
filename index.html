@@ -43,6 +43,7 @@
     .navbar-brand img {
       height: 45px;
       width: auto;
+      object-fit: contain;
       border-radius: 5px;
     }
 
@@ -73,11 +74,14 @@
       margin-top: 30px;
     }
     .carousel-item img {
-      height: 300px;
+      width: 100%;
+      height: auto;
+      max-height: 350px;
       object-fit: cover;
+      object-position: center;
     }
     @media (min-width: 992px) {
-      .carousel-item img { height: 450px; }
+      .carousel-item img { max-height: 450px; }
       .carousel { margin-top: 0; }
     }
 
@@ -156,6 +160,7 @@
     .tech-footer h5 img {
       height: 35px;
       width: auto;
+      object-fit: contain;
       border-radius: 4px;
     }
     .tech-footer ul {
@@ -392,7 +397,7 @@
           <h3 class="fw-bold" style="color: var(--secondary);">شركاء النجاح</h3>
         </div>
         <div class="col-lg-10" data-aos="zoom-in">
-          <div id="featuresCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+          <div id="partnersCarousel" class="carousel slide shadow" data-bs-ride="carousel">
             <div class="carousel-inner" style="border-radius: 15px;">
               <div class="carousel-item active">
                 <img src="a1.jpeg" class="d-block w-100" alt="صورة 1">
@@ -404,10 +409,10 @@
                 <img src="a2.jpeg" class="d-block w-100" alt="صورة 2">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
           </div>
@@ -485,7 +490,7 @@
           <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-0 text-center bg-dark">
-          <img src="logo.jpeg" class="img-fluid" alt="شهادة الوزارة" onerror="this.src='WhatsApp Image 2026-04-28 at 11.07.22 PM.jpeg';">
+          <img src="logo.jpeg" class="img-fluid w-100 h-auto" style="max-height: 80vh; object-fit: contain;" alt="شهادة الوزارة" onerror="this.src='WhatsApp Image 2026-04-28 at 11.07.22 PM.jpeg';">
         </div>
       </div>
     </div>
